@@ -74,6 +74,36 @@
     <Option-schnorr>true</Option-schnorr>
     <Option-recovery>true</Option-recovery>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USE_WINDOWS_H;NOMINMAX;_WINSOCKAPI_;WIN32;ENABLE_MODULE_SCHNORR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugLIB|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USE_WINDOWS_H;NOMINMAX;_WINSOCKAPI_;WIN32;ENABLE_MODULE_SCHNORR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugLTCG|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USE_WINDOWS_H;NOMINMAX;_WINSOCKAPI_;WIN32;ENABLE_MODULE_SCHNORR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USE_WINDOWS_H;NOMINMAX;_WINSOCKAPI_;WIN32;ENABLE_MODULE_SCHNORR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLIB|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USE_WINDOWS_H;NOMINMAX;_WINSOCKAPI_;WIN32;ENABLE_MODULE_SCHNORR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTCG|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USE_WINDOWS_H;NOMINMAX;_WINSOCKAPI_;WIN32;ENABLE_MODULE_SCHNORR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="..\..\..\..\packaging\nuget\gmp\package.bat" />
     <None Include="..\..\..\..\packaging\nuget\gmp\package.config" />
