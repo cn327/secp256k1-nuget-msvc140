@@ -74,6 +74,11 @@
     </Option-schnorr>
     <Option-recovery>true</Option-recovery>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugLIB|Win32'">
+    <Lib>
+      <OutputFile>C:\Users\andrew\Documents\btc\msvc14-build-ok\packages\secp256k1_vc140.0.1.0.15\build\native\bin\secp256k1-x86-v140-mt-sgd-0_1_0_15.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="..\..\..\..\packaging\nuget\gmp\package.bat" />
     <None Include="..\..\..\..\packaging\nuget\gmp\package.config" />
